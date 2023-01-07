@@ -1,0 +1,82 @@
+CREATE TABLE Order
+(
+  orderMail VARCHAR(50) NOT NULL,
+  orderName VARCHAR(50) NOT NULL,
+  orderSurname VARCHAR(50) NOT NULL,
+  orderCity VARCHAR(50) NOT NULL,
+  orderCountry VARCHAR(50) NOT NULL,
+  orderAge INT NOT NULL,
+  orderSex bit NOT NULL,
+  orderRecordDate DATE NOT NULL,
+  PRIMARY KEY (orderMail)
+);
+
+CREATE TABLE Product_Area
+(
+  productAreaID INT NOT NULL,
+  productArea VARCHAR(50) NOT NULL,
+  PRIMARY KEY (productAreaID)
+);
+
+CREATE TABLE Product_Type
+(
+  productTypeID INT NOT NULL,
+  productType VARCHAR(50) NOT NULL,
+  PRIMARY KEY (productTypeID)
+);
+
+CREATE TABLE Company
+(
+  companyID INT NOT NULL,
+  companyName VARCHAR(50) NOT NULL,
+  PRIMARY KEY (companyID)
+);
+
+CREATE TABLE Product
+(
+  refNo VARCHAR(50) NOT NULL,
+  productPhoto binary NOT NULL,
+  productVolume FLOAT NOT NULL,
+  productWeight FLOAT NOT NULL,
+  productDesc VARCHAR(50) NOT NULL,
+  productName VARCHAR(50) NOT NULL,
+  productID INT NOT NULL,
+  productAreaID INT NOT NULL,
+  productTypeID INT NOT NULL,
+  companyID INT NOT NULL,
+  PRIMARY KEY (productID),
+  FOREIGN KEY (productAreaID) REFERENCES Product_Area(productAreaID),
+  FOREIGN KEY (productTypeID) REFERENCES Product_Type(productTypeID),
+  FOREIGN KEY (companyID) REFERENCES Company(companyID)
+);
+
+CREATE TABLE Special_Product
+(
+  sProductRefNo VARCHAR(50),
+  sProductName VARCHAR(50) NOT NULL,
+  sProductVolume FLOAT NOT NULL,
+  sProductWeight FLOAT NOT NULL,
+  sProductID INT NOT NULL,
+  productAreaID INT NOT NULL,
+  productTypeID INT NOT NULL,
+  companyID INT NOT NULL,
+  orderMail VARCHAR(50) NOT NULL,
+  PRIMARY KEY (sProductID),
+  FOREIGN KEY (productAreaID) REFERENCES Product_Area(productAreaID),
+  FOREIGN KEY (productTypeID) REFERENCES Product_Type(productTypeID),
+  FOREIGN KEY (companyID) REFERENCES Company(companyID),
+  FOREIGN KEY (orderMail) REFERENCES Order(orderMail)
+);
+
+CREATE TABLE Record_Knapsack
+(
+  recordSequence INT NOT NULL,
+  recordID INT NOT NULL,
+  productID INT,
+  sProductID INT,
+  orderMail VARCHAR(50) NOT NULL,
+  PRIMARY KEY (recordID),
+  FOREIGN KEY (productID) REFERENCES Product(productID),
+  FOREIGN KEY (sProductID) REFERENCES Special_Product(sProductID),
+  FOREIGN KEY (orderMail) REFERENCES Order(orderMail)
+);
