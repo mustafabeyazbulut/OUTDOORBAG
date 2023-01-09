@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "description": "A Button for clicking!",
+  "type": "object",
+  "title": "Button",
+  "required": [],
+  "properties": {
+    "type": {
+      "type": "string",
+      "title": "type",
+      "default": "primary",
+      "enum": [
+        "primary",
+        "secondary"
+      ],
+      "enumNames": [
+        "Primary",
+        "Secondary",
+        "Success",
+        "Danger",
+        "Warning",
+        "Info",
+        "Light",
+        "Dark",
+        "Link"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "title": "Size",
+      "default": "m",
+      "enum": [
+        "s",
+        "m",
+        "l"
+      ],
+      "enumNames": [
+        "Small",
+        "Default",
+        "Large"
+      ]
+    },
+    "disabled": {
+      "type": "boolean",
+      "title": "Disabled",
+      "default": false
+    },
+    "handleClick": {
+      "description": "This is sick",
+      "typeof": "function",
+      "tsType": "() => void"
+    },
+    "children": {
+      "typeof": "function",
+      "tsType": "React.ReactNode"
+    }
+  }
+}

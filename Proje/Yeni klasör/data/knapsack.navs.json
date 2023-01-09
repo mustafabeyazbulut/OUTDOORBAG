@@ -1,0 +1,17 @@
+{
+  "primary": [],
+  "secondary": [
+    {
+      "id": "components-asdf",
+      "name": "Components",
+      "path": "",
+      "parentId": "root"
+    },
+    {
+      "id": "/pattern/button",
+      "name": "Button",
+      "path": "/pattern/button",
+      "parentId": "components-asdf"
+    }
+  ]
+}

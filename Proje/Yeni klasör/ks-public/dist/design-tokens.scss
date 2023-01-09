@@ -1,0 +1,47 @@
+
+/*
+  Do not edit directly
+  Generated on Mon, 09 Jan 2023 20:07:28 GMT
+*/
+
+$color-layout-default-bg: #ffffff !default;
+$color-layout-primary: #393b3e !default;
+$color-layout-primary-hover: #525a62 !default;
+$color-layout-secondary: #555555 !default;
+$color-layout-border: #dddddd !default;
+$color-text-default: #222222 !default;
+$color-text-inverse: #f9f9f9 !default;
+$color-text-link: #2b64a8 !default;
+$spacing-xxs: 2px !default;
+$spacing-xs: 4px !default;
+$spacing-s: 8px !default;
+$spacing-m: 16px !default;
+$spacing-l: 32px !default;
+$spacing-xl: 48px !default;
+$spacing-xxl: 64px !default;
+
+$tokens: (
+  'color': (
+    'layout': (
+      'defaultBg': $color-layout-default-bg,
+      'primary': $color-layout-primary,
+      'primaryHover': $color-layout-primary-hover,
+      'secondary': $color-layout-secondary,
+      'border': $color-layout-border
+    ),
+    'text': (
+      'default': $color-text-default,
+      'inverse': $color-text-inverse,
+      'link': $color-text-link
+    )
+  ),
+  'spacing': (
+    'xxs': $spacing-xxs,
+    'xs': $spacing-xs,
+    's': $spacing-s,
+    'm': $spacing-m,
+    'l': $spacing-l,
+    'xl': $spacing-xl,
+    'xxl': $spacing-xxl
+  )
+);

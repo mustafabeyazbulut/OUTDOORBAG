@@ -1,0 +1,48 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "ex-button",
+      "description": "An interactive element that transforms some property on a page, or otherwise submits a form.",
+      "references": [
+        {
+          "name": "Knapsack Docs",
+          "url": "http://localhost:3999/pattern/button/web-component"
+        }
+      ],
+      "attributes": [
+        {
+          "name": "size",
+          "values": [
+            {
+              "name": "s"
+            },
+            {
+              "name": "m"
+            },
+            {
+              "name": "l"
+            }
+          ],
+          "description": "Size of the button."
+        },
+        {
+          "name": "type",
+          "values": [
+            {
+              "name": "primary"
+            },
+            {
+              "name": "secondary"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "disabled",
+          "description": "boolean"
+        }
+      ]
+    }
+  ]
+}
