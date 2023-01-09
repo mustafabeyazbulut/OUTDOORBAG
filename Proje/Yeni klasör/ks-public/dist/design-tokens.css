@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 09 Jan 2023 20:07:28 GMT
+ */
+
+:root {
+  --color-layout-default-bg: #ffffff;
+  --color-layout-primary: #393b3e;
+  --color-layout-primary-hover: #525a62;
+  --color-layout-secondary: #555555;
+  --color-layout-border: #dddddd;
+  --color-text-default: #222222;
+  --color-text-inverse: #f9f9f9;
+  --color-text-link: #2b64a8;
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 64px;
+}

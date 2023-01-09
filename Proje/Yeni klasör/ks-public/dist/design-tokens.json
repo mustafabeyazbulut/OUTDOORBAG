@@ -1,0 +1,174 @@
+{
+  "tokens": [
+    {
+      "value": "#FFFFFF",
+      "name": "color-layout-default-bg",
+      "category": "color",
+      "tags": ["layout"],
+      "meta": {
+        "path": ["color", "layout", "defaultBg"],
+        "attributes": {
+          "category": "color",
+          "type": "layout",
+          "item": "defaultBg"
+        }
+      }
+    },
+    {
+      "value": "#393B3E",
+      "name": "color-layout-primary",
+      "category": "color",
+      "tags": ["layout"],
+      "meta": {
+        "path": ["color", "layout", "primary"],
+        "attributes": {
+          "category": "color",
+          "type": "layout",
+          "item": "primary"
+        }
+      }
+    },
+    {
+      "value": "#525A62",
+      "name": "color-layout-primary-hover",
+      "category": "color",
+      "tags": ["layout"],
+      "meta": {
+        "path": ["color", "layout", "primaryHover"],
+        "attributes": {
+          "category": "color",
+          "type": "layout",
+          "item": "primaryHover"
+        }
+      }
+    },
+    {
+      "value": "#555555",
+      "name": "color-layout-secondary",
+      "category": "color",
+      "tags": ["layout"],
+      "meta": {
+        "path": ["color", "layout", "secondary"],
+        "attributes": {
+          "category": "color",
+          "type": "layout",
+          "item": "secondary"
+        }
+      }
+    },
+    {
+      "value": "#DDDDDD",
+      "name": "color-layout-border",
+      "category": "color",
+      "tags": ["layout"],
+      "meta": {
+        "path": ["color", "layout", "border"],
+        "attributes": {
+          "category": "color",
+          "type": "layout",
+          "item": "border"
+        }
+      }
+    },
+    {
+      "value": "#222222",
+      "name": "color-text-default",
+      "category": "color",
+      "tags": ["text"],
+      "meta": {
+        "path": ["color", "text", "default"],
+        "attributes": { "category": "color", "type": "text", "item": "default" }
+      }
+    },
+    {
+      "value": "#f9f9f9",
+      "name": "color-text-inverse",
+      "category": "color",
+      "tags": ["text"],
+      "meta": {
+        "path": ["color", "text", "inverse"],
+        "attributes": { "category": "color", "type": "text", "item": "inverse" }
+      }
+    },
+    {
+      "value": "#2B64A8",
+      "name": "color-text-link",
+      "category": "color",
+      "tags": ["text"],
+      "meta": {
+        "path": ["color", "text", "link"],
+        "attributes": { "category": "color", "type": "text", "item": "link" }
+      }
+    },
+    {
+      "value": "2px",
+      "name": "spacing-xxs",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "xxs"],
+        "attributes": { "category": "spacing", "type": "xxs" }
+      }
+    },
+    {
+      "value": "4px",
+      "name": "spacing-xs",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "xs"],
+        "attributes": { "category": "spacing", "type": "xs" }
+      }
+    },
+    {
+      "value": "8px",
+      "name": "spacing-s",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "s"],
+        "attributes": { "category": "spacing", "type": "s" }
+      }
+    },
+    {
+      "value": "16px",
+      "name": "spacing-m",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "m"],
+        "attributes": { "category": "spacing", "type": "m" }
+      }
+    },
+    {
+      "value": "32px",
+      "name": "spacing-l",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "l"],
+        "attributes": { "category": "spacing", "type": "l" }
+      }
+    },
+    {
+      "value": "48px",
+      "name": "spacing-xl",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "xl"],
+        "attributes": { "category": "spacing", "type": "xl" }
+      }
+    },
+    {
+      "value": "64px",
+      "name": "spacing-xxl",
+      "category": "spacing",
+      "tags": [],
+      "meta": {
+        "path": ["spacing", "xxl"],
+        "attributes": { "category": "spacing", "type": "xxl" }
+      }
+    }
+  ]
+}

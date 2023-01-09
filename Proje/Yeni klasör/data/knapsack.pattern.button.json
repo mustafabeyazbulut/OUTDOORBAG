@@ -1,0 +1,281 @@
+{
+  "id": "button",
+  "title": "Button",
+  "description": "An interactive element that transforms some property on a page, or otherwise submits a form.",
+  "statuses": {
+    "design": "ready",
+    "react": "ready",
+    "web-components": "ready"
+  },
+  "demoSize": "s",
+  "demoWidths": [{ "width": 180 }],
+  "templates": [
+    {
+      "title": "React",
+      "id": "react",
+      "templateLanguageId": "react",
+      "path": "../src/components/button/button.tsx",
+      "spec": {
+        "slots": { "children": { "title": "Children" } },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "description": "A Button for clicking!",
+          "type": "object",
+          "title": "Button",
+          "required": [],
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "type",
+              "default": "primary",
+              "enum": ["primary", "secondary"],
+              "enumNames": [
+                "Primary",
+                "Secondary",
+                "Success",
+                "Danger",
+                "Warning",
+                "Info",
+                "Light",
+                "Dark",
+                "Link"
+              ]
+            },
+            "size": {
+              "type": "string",
+              "title": "Size",
+              "default": "m",
+              "enum": ["s", "m", "l"],
+              "enumNames": ["Small", "Default", "Large"]
+            },
+            "disabled": {
+              "type": "boolean",
+              "title": "Disabled",
+              "default": false
+            },
+            "handleClick": {
+              "description": "This is sick",
+              "typeof": "function",
+              "tsType": "() => void"
+            }
+          }
+        }
+      },
+      "demosById": {
+        "primary": {
+          "id": "primary",
+          "type": "data",
+          "title": "Primary",
+          "description": "The primary action on the page. Advances the user to the next logical step. One per page max.",
+          "data": {
+            "slots": { "children": ["Primary"] },
+            "props": {
+              "type": "primary",
+              "size": "m",
+              "disabled": false,
+              "outlined": false,
+              "handleClick": "() => alert('Hello world!')"
+            }
+          }
+        },
+        "UAsr_mdsK": {
+          "id": "UAsr_mdsK",
+          "title": "Secondary",
+          "description": "Standard button for general interactivity.",
+          "type": "data",
+          "data": {
+            "props": {
+              "type": "secondary",
+              "size": "m",
+              "disabled": false,
+              "handleClick": "() => alert('Hello world!')"
+            },
+            "slots": { "children": ["Secondary"] }
+          }
+        },
+        "ClAfsmte1": {
+          "id": "ClAfsmte1",
+          "type": "data",
+          "title": "Button",
+          "description": "This example is used for the Overview documentation.",
+          "data": {
+            "slots": { "children": ["Button"] },
+            "props": {
+              "type": "secondary",
+              "size": "m",
+              "disabled": false,
+              "outlined": false,
+              "handleClick": "() => alert('Hello world!')"
+            }
+          }
+        }
+      },
+      "demos": ["primary", "UAsr_mdsK", "ClAfsmte1"],
+      "slices": []
+    },
+    {
+      "title": "Web Component",
+      "id": "web-component",
+      "templateLanguageId": "web-components",
+      "path": "../src/components/button/button.wc.js",
+      "alias": "ex-button",
+      "spec": {
+        "slots": { "default": { "title": "Default" } },
+        "props": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "description": "An interactive element that transforms some property on a page, or otherwise submits a form.",
+          "type": "object",
+          "required": [],
+          "properties": {
+            "size": {
+              "type": "string",
+              "description": "Size of the button.",
+              "default": "m",
+              "enum": ["s", "m", "l"]
+            },
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "default": "primary",
+              "enum": ["primary", "secondary"],
+              "enumNames": [
+                "Primary",
+                "Secondary",
+                "Success",
+                "Danger",
+                "Warning",
+                "Info",
+                "Light",
+                "Dark",
+                "Link"
+              ]
+            },
+            "disabled": {
+              "type": "boolean",
+              "title": "Disabled",
+              "default": false
+            }
+          }
+        }
+      },
+      "demosById": {
+        "main": {
+          "id": "main",
+          "title": "Primary",
+          "type": "data",
+          "data": {
+            "props": {
+              "size": "m",
+              "type": "primary",
+              "disabled": false,
+              "outlined": false
+            },
+            "slots": { "default": ["Primary"] }
+          },
+          "description": "Standard button for general interactivity."
+        },
+        "F5h2DwUlJ": {
+          "id": "F5h2DwUlJ",
+          "title": "Secondary",
+          "type": "data",
+          "data": {
+            "props": {
+              "size": "m",
+              "type": "secondary",
+              "disabled": false,
+              "outlined": false
+            },
+            "slots": { "default": ["Secondary"] }
+          },
+          "description": "Standard button for general interactivity."
+        }
+      },
+      "demos": ["main", "F5h2DwUlJ"],
+      "slices": [
+        {
+          "id": "qwfqhASTx",
+          "blockId": "pattern-template-slice",
+          "data": {
+            "templateId": "react",
+            "demoSize": "landscape",
+            "showSchemaForm": false,
+            "patternId": "button",
+            "demoId": "primary"
+          }
+        },
+        {
+          "id": "Te8FQoYKx",
+          "blockId": "pattern-template-slice",
+          "data": {
+            "templateId": "web-component",
+            "showSchemaForm": false,
+            "demoSize": "landscape",
+            "patternId": "button",
+            "demoId": "main"
+          }
+        }
+      ]
+    }
+  ],
+  "subPages": [
+    {
+      "title": "Overview",
+      "id": "Overview",
+      "slices": [
+        {
+          "id": "kJJeYn-tk",
+          "blockId": "markdown-slice",
+          "data": {
+            "md": "Simple button pattern with a few options. Try manipulating the `HandleClick` property on one of the pattern template tabs (React, Web Comopnent, or Twig), where you can actually pass in a function from the schema form."
+          }
+        },
+        {
+          "id": "GQPv3h1U2",
+          "blockId": "pattern-variations",
+          "data": {
+            "templateId": "react",
+            "patternId": "button",
+            "demoId": "ClAfsmte1",
+            "variationId": "type"
+          }
+        },
+        {
+          "id": "m_g-24BmU",
+          "blockId": "pattern-variations",
+          "data": {
+            "templateId": "react",
+            "patternId": "button",
+            "demoId": "ClAfsmte1",
+            "variationId": "size"
+          }
+        },
+        {
+          "id": "MLvXI6mJ3",
+          "blockId": "markdown-slice",
+          "data": { "md": "## Color Tokens Used" }
+        },
+        {
+          "id": "bPTRM9ENe",
+          "blockId": "design-token-slice",
+          "data": {
+            "tokens": { "tags": [], "category": "color", "name": "p" },
+            "demo": { "id": "color-swatch" }
+          }
+        },
+        {
+          "id": "PrAYgtwC8",
+          "blockId": "design-token-slice",
+          "data": {
+            "tokens": { "tags": [], "category": "color", "name": "sec" },
+            "demo": { "id": "color-swatch" }
+          }
+        }
+      ]
+    }
+  ],
+  "tabs": [
+    { "type": "subPage", "id": "Overview" },
+    { "type": "template", "id": "react" },
+    { "type": "template", "id": "web-component" }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "An interactive element that transforms some property on a page, or otherwise submits a form.",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "size": {
+      "type": "string",
+      "description": "Size of the button.",
+      "default": "m",
+      "enum": [
+        "s",
+        "m",
+        "l"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "default": "primary",
+      "enum": [
+        "primary",
+        "secondary"
+      ],
+      "enumNames": [
+        "Primary",
+        "Secondary",
+        "Success",
+        "Danger",
+        "Warning",
+        "Info",
+        "Light",
+        "Dark",
+        "Link"
+      ]
+    },
+    "disabled": {
+      "type": "boolean",
+      "title": "Disabled",
+      "default": false
+    }
+  }
+}
