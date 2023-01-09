@@ -1,0 +1,47 @@
+.nav{
+    padding: 15px;
+    display: flex;
+   justify-content: space-between;
+   border-bottom: solid 1px #e2e8f0;
+   line-height: 2px;
+   align-items: center;
+   background-color: #fff;
+}
+.nav .left{
+    display: flex;
+    align-items: center;
+}
+.nav .left .logo{
+
+    color: #333;
+    
+}
+.nav .left .logo img{
+    width: 70px;
+    height: 70px;
+}
+.nav .left .menu{
+    display: flex;
+    margin-left: 40px;
+    
+}
+.nav .left .menu li a{
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 3px 10px;
+    display: block;
+    font-size: 16px;
+}
+.nav .left .menu li a:hover{
+    color: #1361e7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 3px 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.nav .right a:first-child{
+    margin-right: 5px;
+}
