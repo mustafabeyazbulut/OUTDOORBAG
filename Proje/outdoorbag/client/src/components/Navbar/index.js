@@ -2,14 +2,13 @@ import React from 'react';
 import styles from './styles.module.css';
 import { Link } from "react-router-dom";      // import react-router-dom
 import { Button } from '@chakra-ui/react'
-import logo from './OutdoorBag.png';
-
+import logo from './OutdoorBag.png'
 function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.left}>
         <div className={styles.logo}>
-          <img src={logo} alt='some value'/>
+        <img src={logo} alt='some value'/>
         </div>
         
         <ul className={styles.menu}>
