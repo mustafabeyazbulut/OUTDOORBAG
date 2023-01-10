@@ -1,28 +1,28 @@
-import { Container,Row , Col} from "reactstrap";
-import Navbar from "./component/Navbar/Navbar";
-import Category from "./component/Category/Category";
-import Knapsack from "./component/Knapsack/Knapsack";
+import React from 'react';
+import './App.css';
+import Navbar from './Component/Navbar/Navbar';
+import { BrowserRouter as Router,  Routes,  Route } from "react-router-dom";   
+import Component from './Pages/Component/Component';
+import Home from './Pages/Home/Home';
+import Signin from "./Pages/Auth/Signin/Signin";
+import Signup from "./Pages/Auth/Signup/Signup";
 
 function App() {
   return (
-    <div >
+    <Router>
+      <Navbar/>
 
-      <Container>
-        <Row>
-          <Navbar title="Navbar"/>
-        </Row>
-        <Row>
-          <Col xs="3">
-            <Category title="Category List"/>
-          </Col>
-          <Col xs="9">
-            <Knapsack title="Knapsack"/>
-          </Col>
-          
-        </Row>
-      </Container>
+      <div id="content">
+        <Routes>
+          <Route path="/" exact element={<Home />} /> 
+          <Route path="/Component" element={<Component />} />
+          <Route path="/Signin" element={<Signin />} /> 
+          <Route path="/Signup" element={<Signup />} /> 
+        </Routes>
+      </div>
+    </Router>
       
-    </div>
+    
   );
 }
 
